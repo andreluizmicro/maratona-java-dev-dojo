@@ -18,10 +18,10 @@ import src.academy.devdojo.javacore.Bintroducaometodos.dominio.Funcionario;
 public class FuncionarioTest01 {
     public static void main(String[] args) {
         Funcionario funcionario = new Funcionario();
-        funcionario.nome = "André Luiz";
-        funcionario.idade = 34;
-        funcionario.salarios = new double[]{1200, 987.32, 2000};
-
+        funcionario.setNome("André Luiz");
+        funcionario.setIdade(34);
+        funcionario.setSalarios(new double[]{1200, 987.32, 2000});;
         funcionario.imprime();
+        System.out.println("Média: " + funcionario.getMedia());
     }
 }
